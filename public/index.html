@@ -1,0 +1,52 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+    <title>FIT3140 Advanced Programming Assignment 1</title>
+</head>
+<body>
+    <div id="loginPanel">
+        <div class="nameArea">
+            <h2 class="title">What's your username?</h2>
+            <input class="usernameInputField" type="text" maxlength="14"/>
+            <button class="usernameEnterButton">Enter</button>
+            <div class="invalidName">Invalid Username! Try Again!</div>
+            <div class="bar"></div>
+        </div>
+    </div>
+        <div id="board">
+            <div id="enermyPart">
+                Your Opponent: <text class="enermyName"></text>
+            </div>
+            <table>
+                <tr>
+                    <td class="td00"></td>
+                    <td class="td01"></td>
+                    <td class="td02"></td>
+                </tr>
+                <tr>
+                    <td class="td10"></td>
+                    <td class="td11"></td>
+                    <td class="td12"></td>
+                </tr>
+                <tr>
+                    <td class="td20"></td>
+                    <td class="td21"></td>
+                    <td class="td22"></td>
+                </tr>
+            </table>
+            <center>
+                <button class="resetButton">Reset</button>
+            </center>
+            <div id="playernumPart">
+                Number Of Players: <text class="playernum"></text>
+            </div>
+        </div>
+        <div id="msgLog">
+            <div id="msgTitle">Tic Tac Toe</div>
+            <ul id="msgPart"></ul>
+        </div>
+</body>
+</html>

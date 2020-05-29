@@ -1,0 +1,168 @@
+html,body{
+    display:table;
+    width:100%;
+    height:100%;
+}
+    
+table{
+    border:3px solid black;
+    margin:auto;
+}
+    
+td{
+    border:3px solid black;
+    width:150px;
+    height:150px;
+    text-align: center;
+}
+
+#board{
+    display:table-cell;
+    vertical-align: middle;
+}
+
+#msgLog{
+    height:100%;
+    width:400px;
+    background-color: #d9d9d9;
+    float:right;
+    overflow-y: scroll;
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-weight: bold;
+}
+
+#msgTitle{
+    padding: 5px 10px 5px 10px;
+    font-size: 30px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+}
+
+#msgPart{
+    margin:20px;
+    list-style-type: none;
+}
+
+#msgPart > li{
+    font-size:20px;
+    padding:10px 0px 10px 0px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+    
+#loginPanel{
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color:white;
+    z-index:5;
+    display: fixed;
+}
+
+#playernumPart, #enermyPart{
+    left: 15;
+    position: absolute;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#playernumPart {
+    bottom: 15;
+}
+
+#enermyPart {
+    top: 5;
+}
+
+.playernum, .enermyName{
+    font-style: italic;
+    font-size: 40px;
+}
+
+.nameArea{
+    width:33%;
+    height: 15%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+    padding:60px 50px 60px 50px;
+    border: 3px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+    
+.title{
+    font-family: monospace;
+}
+    
+.usernameInputField{
+    padding:10px;
+    font-size: 14px;
+}
+
+.usernameEnterButton{
+    padding:10px 20px 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.invalidName{
+    color: #db3236;
+    font-style: italic;
+    font-family: monospace;
+    margin: 1px;
+    visibility: hidden;
+}
+
+.resetButton{
+    margin-top: 10px;
+    padding:15px 30px 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+    
+.marker{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.msgLine{
+    color:white;
+    background-color: black;
+}
+
+.msgLineGame{
+    background-color: #3cba54;
+}
+
+.msgLineWarning{
+    background-color: #f4c20d;
+}
+
+.msgLinePending{
+    color:white;
+    background-color: #3b5998;
+}
+
+.bar {    
+    top:0;
+    left:0;
+    width: 1%;
+    height: 100%;
+    position: absolute;
+    border-radius: 5px;
+    z-index: -1;
+    visibility: hidden;
+    background-color: darkgray;
+}
